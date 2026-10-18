@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffffff">
+<meta name="description" content="Explore the worlds of Banjaaran Studio through thirteen collection films.">
+<title>Collection Films — Banjaaran Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="films.css">
+</head>
+<body class="films-page">
+<div class="announcement">
+  <span>◎ &nbsp;117K+ followers</span>
+  <a href="index.html#collections">Handcrafted artisanal footwear <u>Explore now ↗</u></a>
+  <button class="language" type="button">English⌄</button>
+</div>
+<header class="site-header">
+  <button class="mobile-menu" aria-label="Open menu" type="button">☰</button>
+  <label class="search"><span>⌕</span><input id="searchInput" placeholder="Search products" aria-label="Search products"></label>
+  <a class="brand" href="index.html#top" aria-label="Banjaaran Studio home"><img class="brand-logo" src="assets/banjaaran-logo.png" alt="Banjaaran Studio"></a>
+  <div class="header-actions"><button aria-label="Account" type="button">♙</button><button aria-label="Shopping bag" id="bagButton" type="button">♧ <i id="bagCount">0</i></button></div>
+</header>
+<nav class="main-nav">
+  <a href="index.html#collections">MEN</a>
+  <a href="index.html#collections">WOMEN</a>
+  <a href="index.html#collections">COLLECTIONS</a>
+  <a href="index.html#story">OUR STORY</a>
+  <a href="index.html#craft">CRAFTSMANSHIP</a>
+  <a href="collection-films.html" aria-current="page">WHICH ONE IS YOU?</a>
+</nav>
+
+<main>
+  <section class="film-showcase" aria-label="Banjaaran collection videos">
+    <div class="film-frame" id="filmFrame">
+      <video id="collectionVideo" class="collection-video" autoplay muted loop playsinline preload="auto"
+        aria-label="Banjaaran collection film"></video>
+      <p id="videoStatus" class="sr-only" aria-live="polite">Collection video ready.</p>
+    </div>
+  </section>
+
+  <section class="offer-section" id="offer" aria-labelledby="offerHeading">
+    <div class="offer-intro">
+      <p class="offer-eyebrow">THE BANJAARAN COLLECTOR REWARD</p>
+      <h1 id="offerHeading">COLLECT ANY 3 CARDS TO UNLOCK A FREE REWARD<span>—</span></h1>
+      <p class="offer-description">Every pair of Banjaaran shoes you buy comes with <strong>1 collectible card</strong>. Collect any 3 cards from your shoe purchases, then choose <strong>one of the rewards below for FREE.</strong></p>
+      <p class="offer-how"><span>01</span> Buy a pair of shoes <i>→</i> <span>02</span> Get your card <i>→</i> <span>03</span> Collect 3 cards and claim a reward</p>
+    </div>
+    <div class="offer-grid">
+      <article class="offer-item" data-offer-item="colored">
+        <a class="offer-main" href="coloured-tote.html" aria-label="Explore coloured edition tote bags">
+          <img src="assets/offer/offer-coloured-tote-user.png" alt="Coloured edition tote bag display from the supplied offer artwork" loading="lazy">
+          <span class="offer-free-badge" aria-label="Free reward">FREE</span>
+        </a>
+        <div class="offer-panel" id="coloredPanel" hidden>
+          <div class="option-grid">
+            <button class="tote-option" type="button" data-option="coloredVanrajya" aria-pressed="false">
+              <img src="assets/offer/colored-vanrajya-front.png" alt="Vanrajya coloured tote option" loading="lazy">
+              <span>Vanrajya</span>
+            </button>
+            <button class="tote-option" type="button" data-option="coloredFalseFace" aria-pressed="false">
+              <img src="assets/offer/colored-false-face-front.png" alt="False Face coloured tote option" loading="lazy">
+              <span>False Face</span>
+            </button>
+          </div>
+          <div class="tote-viewer" data-viewer="coloredVanrajya" hidden>
+            <div class="viewer-image-wrap"><img class="viewer-image" alt="Vanrajya coloured tote view" src="assets/offer/colored-vanrajya-front.png"></div>
+            <div class="viewer-controls"><button type="button" class="viewer-arrow" data-step="-1" aria-label="Previous Vanrajya image">←</button><span class="viewer-count" aria-live="polite">1 / 4</span><button type="button" class="viewer-arrow" data-step="1" aria-label="Next Vanrajya image">→</button></div>
+          </div>
+          <div class="tote-viewer" data-viewer="coloredFalseFace" hidden>
+            <div class="viewer-image-wrap"><img class="viewer-image" alt="False Face coloured tote view" src="assets/offer/colored-false-face-front.png"></div>
+            <div class="viewer-controls"><button type="button" class="viewer-arrow" data-step="-1" aria-label="Previous False Face image">←</button><span class="viewer-count" aria-live="polite">1 / 4</span><button type="button" class="viewer-arrow" data-step="1" aria-label="Next False Face image">→</button></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="offer-item" data-offer-item="diy">
+        <a class="offer-main" href="diy-tote.html" aria-label="Explore DIY line-art tote bags">
+          <img src="assets/offer/offer-diy-tote-user.png" alt="DIY line-art tote bag display from the supplied offer artwork" loading="lazy">
+          <span class="offer-free-badge" aria-label="Free reward">FREE</span>
+        </a>
+        <div class="offer-panel" id="diyPanel" hidden>
+          <div class="option-grid">
+            <button class="tote-option" type="button" data-option="diyVanrajya" aria-pressed="false">
+              <img src="assets/offer/diy-vanrajya-front.png" alt="Vanrajya DIY line-art tote option" loading="lazy">
+              <span>Vanrajya</span>
+            </button>
+            <button class="tote-option" type="button" data-option="diyFalseFace" aria-pressed="false">
+              <img src="assets/offer/diy-false-face-front.png" alt="False Face DIY line-art tote option" loading="lazy">
+              <span>False Face</span>
+            </button>
+          </div>
+          <div class="tote-viewer" data-viewer="diyVanrajya" hidden>
+            <div class="viewer-image-wrap"><img class="viewer-image" alt="Vanrajya DIY tote view" src="assets/offer/diy-vanrajya-front.png"></div>
+            <div class="viewer-controls"><button type="button" class="viewer-arrow" data-step="-1" aria-label="Previous Vanrajya DIY image">←</button><span class="viewer-count" aria-live="polite">1 / 4</span><button type="button" class="viewer-arrow" data-step="1" aria-label="Next Vanrajya DIY image">→</button></div>
+          </div>
+          <div class="tote-viewer" data-viewer="diyFalseFace" hidden>
+            <div class="viewer-image-wrap"><img class="viewer-image" alt="False Face DIY tote view" src="assets/offer/diy-false-face-front.png"></div>
+            <div class="viewer-controls"><button type="button" class="viewer-arrow" data-step="-1" aria-label="Previous False Face DIY image">←</button><span class="viewer-count" aria-live="polite">1 / 4</span><button type="button" class="viewer-arrow" data-step="1" aria-label="Next False Face DIY image">→</button></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="offer-item">
+        <a class="offer-main" href="collector-box.html" aria-label="View Collection Cards collector box product page">
+          <img src="assets/offer/offer-collector-box-user.png" alt="Banjaaran Studio collection cards box display from the supplied offer artwork" loading="lazy">
+        </a>
+      </article>
+    </div>
+  </section>
+</main>
+
+<div class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
+<script src="films.js"></script>
+<script src="offer.js"></script>
+</body>
+</html>
